@@ -1,0 +1,23 @@
+html {
+  background: hsl(240, 10%, 3.9%);
+  font-family: "Inter", sans-serif;
+  font-feature-settings: "liga" 1, "calt" 1;
+  color: white;
+}
+
+body {
+  margin: 0 auto;
+  padding: 1rem;
+  width: 50%;
+  line-height: 1.75rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
