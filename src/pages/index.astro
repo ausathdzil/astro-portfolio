@@ -1,24 +1,33 @@
 ---
-import Navbar from "../components/Navbar.astro";
-import Layout from "../layouts/Layout.astro";
+import Navbar from "@/components/Navbar.astro";
+import Layout from "@/layouts/Layout.astro";
+import ProjectTabs from "@/components/ProjectTabs";
+import "@/styles/globals.css";
 ---
 
 <Layout title="wrath • home">
   <Navbar />
 
-	<article>
-		<p>
-			<small class="text-sm text-neutral-500">
-				IPA&nbsp; /raTH/ — extreme anger 😼
-			</small>
-			<br />
+  <article class="mb-10">
+    <p>
+      <small class="text-sm text-zinc-500">
+        IPA&nbsp; /raTH/ — extreme anger 😼
+      </small>
+      <br />
 
-			Hello 🙋‍♂️ my name is <strong>Ausath</strong>, or <strike>wrath</strike> <i>(ign)</i>.
-			I'm an undergraduate student currently majoring in Information Systems. I'm interested in
-			<strong>front-end web development</strong> and are currently learning to build websites 
-			with <strong>Astro</strong> 🤓, in fact, I used it to build this website (still in progress).
-			I enjoy listening to music and playing games on my free time, feel free to add me on 
-			Spotify and Discord 🎮.
-		</p>
-	</article>
+      Hello 🙋‍♂️ my name is <strong>Ausath</strong>, or <strike>wrath</strike>
+      <i>(ign)</i>. I'm an undergraduate student currently majoring in
+      Information Systems. I'm interested in
+      <strong>front-end web development</strong> and are currently learning to build
+      websites with <strong>Astro</strong> 🤓, in fact, I used it to build this website
+      (still in progress). I enjoy listening to music and playing games on my free
+      time, feel free to add me on Spotify and Discord 🎮.
+    </p>
+  </article>
+
+  <section>
+    <h1 class="text-xl font-bold mb-1.5">Projects</h1>
+
+		<ProjectTabs client:load />
+  </section>
 </Layout>
