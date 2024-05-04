@@ -167,10 +167,9 @@ export default function ProjectTabs() {
           <p>
             During HCI class in university we were told to make a UI design for
             a calculator app, so I thought it would be a good idea to also{" "}
-            <strong>make</strong>
-            the app, although my version would be web based with{" "}
-            <strong>React</strong> and maybe Astro again 🤔? Who knows. Right
-            now I've only made the preview of it using figma.
+            <strong>make</strong> the app, although my version would be web
+            based with <strong>React</strong> and maybe Astro again 🤔? Who
+            knows. Right now I've only made the preview of it using figma.
           </p>
         </div>
       </TabsContent>
