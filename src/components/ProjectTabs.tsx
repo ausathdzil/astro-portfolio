@@ -108,7 +108,7 @@ export default function ProjectTabs() {
                 <ul className="flex items-center">
                   <li className="mr-3">
                     <a
-                      href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                      href="https://react.dev/"
                       target="_blank"
                       aria-label="Link to React homepage"
                     >
@@ -123,7 +123,7 @@ export default function ProjectTabs() {
                   </li>
                   <li className="mr-3">
                     <a
-                      href="https://tailwind.com/"
+                      href="https://tailwindcss.com/"
                       target="_blank"
                       aria-label="Link to tailwindcss homepage"
                     >
