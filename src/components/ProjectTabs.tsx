@@ -25,8 +25,8 @@ export default function ProjectTabs() {
               <CardHeader>
                 <img
                   className="w-full rounded-lg"
-                  src="./public/bookshelf-screenshot.png"
-                  alt="placeholder image"
+                  src="https://i.imgur.com/bx2fNdS.png"
+                  alt="bookshelf app"
                 />
               </CardHeader>
               <CardContent>
@@ -98,8 +98,8 @@ export default function ProjectTabs() {
             <CardHeader>
               <img
                 className="w-full rounded-lg"
-                src="./public/calculator-preview.png"
-                alt="placeholder image"
+                src="https://i.imgur.com/QeHKOV2.png"
+                alt="calculator app preview"
               />
             </CardHeader>
             <CardContent>
