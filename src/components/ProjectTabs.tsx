@@ -164,7 +164,7 @@ export default function ProjectTabs() {
               </nav>
             </CardContent>
           </Card>
-          <p>
+          <p className="text-lg">
             During HCI class in university we were told to make a UI design for
             a calculator app, so I thought it would be a good idea to also{" "}
             <strong>make</strong> the app, although my version would be web
