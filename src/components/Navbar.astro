@@ -11,8 +11,13 @@ import "@/styles/globals.css";
           href="https://open.spotify.com/playlist/3efExZxOEwFHj4MBgHYuXk?si=f4c6749503bc4459"
           target="_blank"
           aria-label="Link to ausath's music playlist"
+          class="after:"
         >
-          <p class="text-base text-zinc-500 hover:underline">music</p>
+          <p class="text-base text-zinc-500">
+            <span class="link link-underline link-underline-black">
+              music
+            </span>
+          </p>
         </a>
       </li>
     </ul>
@@ -21,3 +26,23 @@ import "@/styles/globals.css";
     class="h-1 border-none bg-gradient-to-r from-emerald-500 to-sky-500 rounded"
   />
 </header>
+
+<style>
+  .link-underline {
+    border-bottom-width: 0;
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(rgb(113 113 122), rgb(113 113 122));
+    background-size: 0 2px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+  .link-underline-zinc {
+    background-image: linear-gradient(transparent, transparent),
+      linear-gradient(rgb(113 113 122), rgb(113 113 122));
+  }
+  .link-underline:hover {
+    background-size: 100% 2px;
+    background-position: 0 100%;
+  }
+</style>
