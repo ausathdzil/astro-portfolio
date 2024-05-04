@@ -12,7 +12,7 @@ html {
 body {
   margin: 0 auto;
   padding: 1rem;
-  width: 75%;
+  width: 100%;
   line-height: 1.75rem;
 }
 
@@ -23,5 +23,11 @@ body {
 @supports (font-variation-settings: normal) {
   :root {
     font-family: InterVariable, sans-serif;
+  }
+}
+
+@media screen and (min-width: 426px) {
+  body {
+    width: 75%;
   }
 }
