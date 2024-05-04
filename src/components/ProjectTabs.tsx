@@ -20,27 +20,27 @@ export default function ProjectTabs() {
       </TabsList>
       <TabsContent value="bookshelf">
         <div className="grid w-full grid-cols-2 gap-4">
-          <div>
+          <Card>
             <Card>
               <CardHeader>
                 <img
-                  className=" rounded-lg"
+                  className="w-full rounded-lg"
                   src="./public/bookshelf-screenshot.png"
                   alt="placeholder image"
                 />
               </CardHeader>
               <CardContent>
-                <CardTitle className="mb-4">Bookshelf App</CardTitle>
+                <CardTitle className="mb-4">Bookshelf</CardTitle>
                 <nav>
                   <ul className="flex items-center">
-                    <li className="mr-2">
+                    <li className="mr-3">
                       <a
                         href="https://developer.mozilla.org/en-US/docs/Web/HTML"
                         target="_blank"
                         aria-label="Link to mdn HTML docs"
                       >
                         <svg
-                          className="w-7 h-7 transition ease-in-out delay-50 fill-black hover:fill-orange-500 hover:scale-105"
+                          className="w-8 h-8 transition ease-in-out delay-50 fill-orange-500 hover:scale-105"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 384 512"
                         >
@@ -55,7 +55,7 @@ export default function ProjectTabs() {
                         aria-label="Link to mdn CSS docs"
                       >
                         <svg
-                          className="w-6 h-6 transition ease-in-out delay-50 fill-black hover:fill-blue-500 hover:scale-105"
+                          className="w-7 h-7 transition ease-in-out delay-50 fill-blue-500 hover:scale-105"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 512 512"
                         >
@@ -70,7 +70,7 @@ export default function ProjectTabs() {
                         aria-label="Link to mdn JavaScript docs"
                       >
                         <svg
-                          className="w-7 h-7 transition ease-in-out delay-50 fill-black hover:fill-yellow-500 hover:scale-105"
+                          className="w-8 h-8 transition ease-in-out delay-50 fill-yellow-500 hover:scale-105"
                           xmlns="http://www.w3.org/2000/svg"
                           viewBox="0 0 448 512"
                         >
@@ -82,24 +82,63 @@ export default function ProjectTabs() {
                 </nav>
               </CardContent>
             </Card>
-          </div>
-          <p>
+          </Card>
+          <p className="text-lg">
             Bookshelf app made with <strong>vanilla JavaScript</strong>. This
             was my <strong>first ever</strong> mini project stepping into the
             front-end dev world, it's basically a <i>todo app</i>. I want to
             rebuild this app with a full stack framework soon, we'll see how it
-            goes ;).
+            goes 😉.
           </p>
         </div>
       </TabsContent>
       <TabsContent value="calculator">
-        <div className="grid w-full grid-rows-2 sm:grid-cols-2 gap-4">
-          <div></div>
+        <div className="grid w-full grid-cols-2 gap-4">
           <p>
-            Soon to be made Calculator app, I intend to build it with
-            <strong>React</strong>. This is only a preview of the UI I made in
-            figma.
+            During HCI class in university we were told to make a UI design for a 
+            calculator app, so I thought it would be a good idea to also <strong>make</strong> 
+            the app, although my version would be web based with <strong>React</strong> and maybe
+            Astro again 🤔? Who knows. Right now I've only made the preview of it using figma.
           </p>
+          <div>
+            <Card>
+              <CardHeader>
+                <img
+                  className="w-full rounded-lg"
+                  src="./public/calculator-preview.png"
+                  alt="placeholder image"
+                />
+              </CardHeader>
+              <CardContent>
+                <CardTitle className="mb-4">Calculator</CardTitle>
+                <nav>
+                  <ul className="flex items-center">
+                    <li className="mr-3">
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                        target="_blank"
+                        aria-label="Link to mdn HTML docs"
+                      ></a>
+                    </li>
+                    <li className="mr-3">
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                        target="_blank"
+                        aria-label="Link to mdn CSS docs"
+                      ></a>
+                    </li>
+                    <li className="mr-0">
+                      <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                        target="_blank"
+                        aria-label="Link to mdn JavaScript docs"
+                      ></a>
+                    </li>
+                  </ul>
+                </nav>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </TabsContent>
     </Tabs>
