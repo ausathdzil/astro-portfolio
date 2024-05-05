@@ -1,5 +1,4 @@
 ---
-import Navbar from "@/components/Navbar.astro";
 import Layout from "@/layouts/Layout.astro";
 import ProjectTabs from "@/components/ProjectTabs";
 import Footer from "@/components/Footer.astro";
@@ -7,8 +6,6 @@ import "@/styles/globals.css";
 ---
 
 <Layout title="wrath • home">
-  <Navbar />
-
   <article class="mb-10">
     <p>
       <small class="text-sm text-zinc-500">
@@ -29,12 +26,10 @@ import "@/styles/globals.css";
   </article>
 
   <article class="mb-10 w-full">
-    <div>
-      <h1 class="text-xl font-bold mb-1.5">Projects</h1>
+    <h1 class="text-xl font-bold mb-1.5">Projects</h1>
 
-      <div class="h-[400px] overflow-auto">
-        <ProjectTabs client:load />
-      </div>
+    <div class="h-[400px] overflow-auto">
+      <ProjectTabs client:load />
     </div>
   </article>
 
