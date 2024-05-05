@@ -40,13 +40,6 @@ const { title } = Astro.props;
       setMode(ev.newDocument, theme);
     }
 	});
-
-	document.addEventListener("astro:after-swap", ev => {
-    const theme = getThemePreference();
-    if (theme === 'light') {
-    	setMode(ev.newDocument, theme);
-  	}
-	});
 </script>
 
 <html lang="en">
