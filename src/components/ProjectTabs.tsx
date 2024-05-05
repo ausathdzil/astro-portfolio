@@ -1,12 +1,5 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProjectTabs() {
   return (
@@ -30,7 +23,16 @@ export default function ProjectTabs() {
                 />
               </CardHeader>
               <CardContent>
-                <CardTitle className="mb-4">Bookshelf</CardTitle>
+                <CardTitle className="mb-4">
+                  <a
+                    href="https://github.com/ausathdzil/bookshelf-app"
+                    target="_blank"
+                    aria-label="Link to ausath's bookshelf app github repo"
+                    className="hover:text-blue-500"
+                  >
+                    Bookshelf
+                  </a>
+                </CardTitle>
                 <nav>
                   <ul className="flex items-center">
                     <li className="mr-3">
@@ -103,9 +105,34 @@ export default function ProjectTabs() {
               />
             </CardHeader>
             <CardContent>
-              <CardTitle className="mb-4">Calculator</CardTitle>
+              <CardTitle className="mb-4">
+                <a
+                  href="https://www.figma.com/file/e0WiOIKIyEZ3Hlc5BtMzUV/Calculator?type=design&node-id=0%3A1&mode=design&t=aj8pvd6S1cAENaXm-1"
+                  target="_blank"
+                  aria-label="Link to ausath's calculator app figma design"
+                  className="hover:text-sky-500"
+                >
+                  Calculator
+                </a>
+              </CardTitle>
               <nav>
                 <ul className="flex items-center">
+                  <li className="mr-3">
+                    <a
+                      href="https://astro.build/"
+                      target="_blank"
+                      aria-label="Link to Astro homepage"
+                    >
+                      <svg
+                        className="w-7 h-7 transition ease-in-out delay-50 fill-zinc-500 hover:fill-zinc-900 hover:scale-105"
+                        viewBox="0 0 85 107"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path d="M27.5893 91.1365C22.7555 86.7178 21.3443 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4374 78.2199 52.0358 77.7822 59.2231 74.2459C60.0453 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.3179 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6844 102.089C39.2086 99.8193 38.5065 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5893 91.1365Z" />
+                        <path d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z" />
+                      </svg>
+                    </a>
+                  </li>
                   <li className="mr-3">
                     <a
                       href="https://react.dev/"
@@ -121,7 +148,7 @@ export default function ProjectTabs() {
                       </svg>
                     </a>
                   </li>
-                  <li className="mr-3">
+                  <li className="mr-0">
                     <a
                       href="https://tailwindcss.com/"
                       target="_blank"
@@ -141,22 +168,6 @@ export default function ProjectTabs() {
                             />
                           </clipPath>
                         </defs>
-                      </svg>
-                    </a>
-                  </li>
-                  <li className="mr-0">
-                    <a
-                      href="https://astro.build/"
-                      target="_blank"
-                      aria-label="Link to Astro homepage"
-                    >
-                      <svg
-                        className="w-8 h-8 transition ease-in-out delay-50 fill-zinc-500 hover:fill-zinc-900 hover:scale-105"
-                        viewBox="0 0 85 107"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M27.5893 91.1365C22.7555 86.7178 21.3443 77.4335 23.3583 70.7072C26.8503 74.948 31.6888 76.2914 36.7005 77.0497C44.4374 78.2199 52.0358 77.7822 59.2231 74.2459C60.0453 73.841 60.8052 73.3027 61.7036 72.7574C62.378 74.714 62.5535 76.6892 62.3179 78.6996C61.7452 83.5957 59.3086 87.3778 55.4332 90.2448C53.8835 91.3916 52.2437 92.4167 50.6432 93.4979C45.7262 96.8213 44.3959 100.718 46.2435 106.386C46.2874 106.525 46.3267 106.663 46.426 107C43.9155 105.876 42.0817 104.24 40.6844 102.089C39.2086 99.8193 38.5065 97.3081 38.4696 94.5909C38.4511 93.2686 38.4511 91.9345 38.2733 90.6309C37.8391 87.4527 36.3471 86.0297 33.5364 85.9478C30.6518 85.8636 28.37 87.6469 27.7649 90.4554C27.7187 90.6707 27.6517 90.8837 27.5847 91.1341L27.5893 91.1365Z" />
-                        <path d="M0 69.5866C0 69.5866 14.3139 62.6137 28.6678 62.6137L39.4901 29.1204C39.8953 27.5007 41.0783 26.3999 42.4139 26.3999C43.7495 26.3999 44.9325 27.5007 45.3377 29.1204L56.1601 62.6137C73.1601 62.6137 84.8278 69.5866 84.8278 69.5866C84.8278 69.5866 60.5145 3.35233 60.467 3.21944C59.7692 1.2612 58.5911 0 57.0029 0H27.8274C26.2392 0 25.1087 1.2612 24.3634 3.21944C24.3108 3.34983 0 69.5866 0 69.5866Z" />
                       </svg>
                     </a>
                   </li>
