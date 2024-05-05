@@ -1,19 +1,27 @@
 ---
 import "@/styles/globals.css";
+import { ModeToggle } from "./ModeToggle";
 ---
 
 <header class="mb-10">
-  <nav class="mb-4 flex justify-between items-center">
+  <nav class="mb-4 flex justify-between items-center gap-4">
     <p class="text-base text-zinc-500">wrath</p>
-    <a
-      href="https://open.spotify.com/playlist/3efExZxOEwFHj4MBgHYuXk?si=f4c6749503bc4459"
-      target="_blank"
-      aria-label="Link to ausath's music playlist"
-    >
-      <p class="text-base text-zinc-500">
-        <span class="link link-underline link-underline-black"> music </span>
-      </p>
-    </a>
+    <div class="flex items-center">
+      <a
+        href="https://open.spotify.com/playlist/3efExZxOEwFHj4MBgHYuXk?si=f4c6749503bc4459"
+        target="_blank"
+        aria-label="Link to ausath's music playlist"
+        class="mr-5"
+      >
+        <p class="text-base text-zinc-500">
+          <span class="link link-underline link-underline-black"> music </span>
+        </p>
+      </a>
+      
+      <div class="mr-0">
+        <ModeToggle client:load />
+      </div>
+    </div>
   </nav>
   <hr
     class="h-1 border-none bg-gradient-to-r from-emerald-500 to-sky-500 rounded"
