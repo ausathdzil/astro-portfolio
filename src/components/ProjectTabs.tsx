@@ -21,7 +21,7 @@ export default function ProjectTabs() {
           <Card>
             <CardHeader>
               <img
-                className="w-full rounded-lg"
+                className="rounded-lg"
                 src="/bookshelf-app.png"
                 alt="bookshelf app"
               />
@@ -102,7 +102,7 @@ export default function ProjectTabs() {
           <Card className="order-first sm:order-last">
             <CardHeader>
               <img
-                className="w-full rounded-lg"
+                className="rounded-lg"
                 src="/calculator-preview.png"
                 alt="calculator app preview"
               />
@@ -127,7 +127,7 @@ export default function ProjectTabs() {
                       aria-label="Link to Astro homepage"
                     >
                       <svg
-                        className="w-7 h-7 transition ease-in-out delay-50 fill-zinc-500 hover:fill-zinc-100 hover:scale-105"
+                        className="w-7 h-7 transition ease-in-out delay-50 fill-zinc-500 hover:fill-zinc-950 dark:hover:fill-zinc-100 hover:scale-105"
                         viewBox="0 0 85 107"
                         xmlns="http://www.w3.org/2000/svg"
                       >
