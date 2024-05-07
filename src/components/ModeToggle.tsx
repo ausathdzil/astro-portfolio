@@ -22,7 +22,7 @@ export function ModeToggle() {
     <div>
       <Button
         onClick={() => setThemeState(theme === "dark" ? "theme-light" : "dark")}
-        variant="link"
+        variant="ghost"
         size="icon"
         className="group"
       >

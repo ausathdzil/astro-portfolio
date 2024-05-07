@@ -91,16 +91,14 @@ export default function ProjectTabs() {
           <p className="text-lg">
             Bookshelf app made with <strong>vanilla JavaScript</strong>. This
             was my <strong>first ever</strong> mini project stepping into the
-            front-end dev world, it's basically a <i>todo app</i>. I want to
-            rebuild this app with a full stack framework soon, we'll see how it
-            goes 😉.
+            front-end dev world, it's basically a <i>todo app</i>.
           </p>
         </div>
       </TabsContent>
       <TabsContent value="calculator">
         <div className="grid w-full grid-row-2 sm:grid-cols-2 gap-4">
-          <Card className="order-first sm:order-last">
-            <CardHeader>
+          <Card className="orbder-first sm:order-last">
+            <CardHeader className="items-center">
               <img
                 className="rounded-lg"
                 src="/calculator-preview.png"
@@ -180,10 +178,9 @@ export default function ProjectTabs() {
           </Card>
           <p className="text-lg">
             During HCI class in university we were told to make a UI design for
-            a calculator app, so I thought it would be a good idea to also{" "}
-            <strong>make</strong> the app, although my version would be web
-            based with <strong>React</strong> and maybe Astro again 🤔? Who
-            knows. Right now I've only made the preview of it using figma.
+            a calculator app, so I thought it would be a good idea to 
+            also make the app, although my version would be web based. 
+            Right now I've only made the preview of it using figma.
           </p>
         </div>
       </TabsContent>
