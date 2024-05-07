@@ -125,7 +125,8 @@ export default function ProjectTabs() {
                       aria-label="Link to Astro homepage"
                     >
                       <svg
-                        className="w-7 h-7 transition ease-in-out delay-50 fill-zinc-500 hover:fill-zinc-950 dark:hover:fill-zinc-100 hover:scale-105"
+                        className="w-7 h-7 transition ease-in-out delay-50 fill-zinc-500 
+                        hover:fill-zinc-950 dark:hover:fill-zinc-100 hover:scale-105"
                         viewBox="0 0 85 107"
                         xmlns="http://www.w3.org/2000/svg"
                       >
@@ -141,7 +142,8 @@ export default function ProjectTabs() {
                       aria-label="Link to React homepage"
                     >
                       <svg
-                        className="w-8 h-8 transition ease-in-out delay-50 fill-zinc-500 hover:fill-sky-500 hover:scale-105"
+                        className="w-8 h-8 transition ease-in-out delay-50 fill-zinc-500 
+                        hover:fill-sky-500 hover:scale-105"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 512 512"
                       >
@@ -156,7 +158,8 @@ export default function ProjectTabs() {
                       aria-label="Link to tailwindcss homepage"
                     >
                       <svg
-                        className="w-8 h-8 transition ease-in-out delay-50 fill-zinc-500 hover:fill-cyan-500 hover:scale-105"
+                        className="w-8 h-8 transition ease-in-out delay-50 fill-zinc-500 
+                        hover:fill-cyan-500 hover:scale-105"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 54 33"
                       >

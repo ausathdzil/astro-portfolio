@@ -1,57 +1,52 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import ProjectTabs from "@/components/ProjectTabs";
-import Footer from "@/components/Footer.astro";
 ---
 
 <Layout title="wrath • home">
   <article class="mb-10">
-    <p>
-      <small class="text-sm text-zinc-500">
-        IPA&nbsp; /raTH/ — extreme anger 😼
-      </small>
-      <br />
+    <small class="text-sm text-zinc-500">
+      IPA&nbsp; /raTH/ — extreme anger 😼
+    </small>
 
-      Hello 🙋‍♂️ my name is <strong>Ausath</strong>, or <strike>wrath</strike>
-      <i>(ign)</i>. I'm an undergraduate student currently majoring in
-      Information Systems. I'm interested in <strong>front-end web development</strong>
-      and are currently learning to build websites with <strong>Astro</strong>
-      🤓, in fact, I used it to build this website (still in progress) as part of
-      my learning process. As of doing things on my free time, I enjoy listening
-      to music and playing games so feel free to add me on Spotify and Discord 🎮.
+    <p>
+      Hello 🙋‍♂️ my name is <strong>Ausath</strong>, or <strike>wrath</strike> <i>(ign)</i>. 
+      I'm an undergraduate student currently majoring in Information Systems. I'm interested 
+      in <strong>front-end web development</strong> and are currently learning to build 
+      websites with <strong>Astro</strong> 🤓, in fact, I used it to build this website 
+      (still in progress) as part of my learning process. As of doing things on my free time, 
+      I enjoy listening to music and playing games so feel free to add me on Spotify and Discord 🎮.
     </p>
   </article>
 
   <article class="mb-10 w-full">
     <h1 class="text-xl font-bold mb-1.5">Projects</h1>
 
-    <div class="h-[400px] overflow-auto">
+    <div class="h-[375px] overflow-auto">
       <ProjectTabs client:load />
     </div>
   </article>
 
   <article class="mb-10">
     <h1 class="text-xl font-bold mb-1.5">Works</h1>
+
     <p class="text-lg">
-      Right now, I'm a part of the front-end developer team for an internal
-      project at <strong>KSM Android UPNVJ</strong>. We're currently building a
-      Study Club LMS for our members.
+      Right now, I'm a part of the front-end developer team for an internal project 
+      at <strong>KSM Android UPNVJ</strong>. We're currently building a Study Club 
+      LMS for our members.
     </p>
   </article>
 
   <article class="mb-10">
     <h1 class="text-xl font-bold mb-1.5">Others</h1>
+
     <p class="text-lg">
-      Aside from web development stuff, I learned programming 
-      with <strong>C</strong> in university. Doing stuff with C makes you 
-      learn <i>how things actually works</i> cause there's a lot 
-      less <strong>abstraction</strong> unlike modern programming languages. 
-      It really helps to understand something to its very basics, especially data structures.
-      For example in C, there are no built-in functions for a lot of data structures
-      like stack and queue. Learning how to make them from scratch helps me understand
-      how they work better.
+      Aside from web development stuff, I learned programming with <strong>C</strong> in university. 
+      Doing stuff with C makes you learn <i>how things actually works</i> cause there's a lot 
+      less <strong>abstraction</strong> unlike modern programming languages. It really helps to 
+      understand something to its very basics, especially data structures. For example in C, 
+      there are no built-in functions for a lot of data structures like stack and queue. 
+      Learning how to make them from scratch helps me understand how they work better.
     </p>
   </article>
-
-  <Footer />
 </Layout>
