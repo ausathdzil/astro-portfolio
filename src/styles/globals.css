@@ -12,4 +12,13 @@ html {
 
 * {
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url('/fonts/InterVariable.woff2') format('woff2');
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
