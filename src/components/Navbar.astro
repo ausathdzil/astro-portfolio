@@ -1,4 +1,5 @@
 ---
+import SkullIcon from "./icons/SkullIcon.astro";
 import { ModeToggle } from "./ModeToggle";
 ---
 
@@ -8,16 +9,9 @@ import { ModeToggle } from "./ModeToggle";
       href="/"
       aria-label="return to homepage"
     >
-      <svg
-        class="w-4 h-4 transition ease-in-out delay-50 fill-zinc-500 hover:scale-105 hover:fill-slate-950 
-        dark:hover:fill-zinc-100"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
-        <path
-          d="M416 398.9c58.5-41.1 96-104.1 96-174.9C512 100.3 397.4 0 256 0S0 100.3 0 224c0 70.7 37.5 133.8 96 174.9c0 .4 0 .7 0 1.1v64c0 26.5 21.5 48 48 48h48V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h64V464c0-8.8 7.2-16 16-16s16 7.2 16 16v48h48c26.5 0 48-21.5 48-48V400c0-.4 0-.7 0-1.1zM96 256a64 64 0 1 1 128 0A64 64 0 1 1 96 256zm256-64a64 64 0 1 1 0 128 64 64 0 1 1 0-128"
-        />
-      </svg>
+      <SkullIcon />
+
+      <span class="sr-only">return to homepage</span>
     </a>
 
     <p class="text-base text-zinc-500">wrath</p>
@@ -30,7 +24,7 @@ import { ModeToggle } from "./ModeToggle";
       class="mr-5"
     >
       <p class="text-base text-zinc-500">
-        <span class="link link-underline link-underline-black">
+        <span class="link link-underline">
           music
         </span>
       </p>
@@ -42,7 +36,7 @@ import { ModeToggle } from "./ModeToggle";
       class="mr-5"
     >
       <p class="text-base text-zinc-500">
-        <span class="link link-underline link-underline-black">
+        <span class="link link-underline">
           blog
         </span>
       </p>
@@ -59,16 +53,13 @@ import { ModeToggle } from "./ModeToggle";
 <style>
   .link-underline {
     border-bottom-width: 0;
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(rgb(113 113 122), rgb(113 113 122));
+    background-image: 
+      linear-gradient(transparent, transparent),
+      linear-gradient(#10b981, #0ea5e9);
     background-size: 0 2px;
     background-position: 0 100%;
     background-repeat: no-repeat;
-    transition: background-size 0.2s ease-in-out;
-  }
-  .link-underline-zinc {
-    background-image: linear-gradient(transparent, transparent),
-      linear-gradient(rgb(113 113 122), rgb(113 113 122));
+    transition: background-size 0.1s ease-in-out;
   }
   .link-underline:hover {
     background-size: 100% 2px;
