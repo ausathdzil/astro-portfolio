@@ -2,7 +2,7 @@ export default function Links() {
   const pageLinks = [
     {
       name: "music",
-      href: "https://open.spotify.com/playlist/3efExZxOEwFHj4MBgHYuXk?si=f4c6749503bc4459",
+      href: "/music/",
       label: "Link to ausath's music playlist",
     },
     {

@@ -1,8 +1,5 @@
 ---
-import GitHubIcon from "@/components/icons/GitHubIcon.astro";
-import InstagramIcon from "@/components/icons/InstagramIcon.astro";
-import SpotifyIcon from "@/components/icons/SpotifyIcon.astro";
-import DiscordIcon from "@/components/icons/DiscordIcon.astro";
+import SocialLinks from "@/components/SocialLinks.astro";
 ---
 
 <footer>
@@ -10,43 +7,6 @@ import DiscordIcon from "@/components/icons/DiscordIcon.astro";
   
   <nav class="mb-4 flex justify-between items-center gap-4">
     <p class="text-base text-zinc-500">Ausath Abdi Dzil Ikram</p>
-    <ul class="flex">
-      <li class="mr-5">
-        <a
-          href="https://github.com/ausathdzil"
-          target="_blank"
-          aria-label="Link to ausath's GitHub profile"
-        >
-          <GitHubIcon />
-        </a>
-      </li>
-      <li class="mr-5">
-        <a
-          href="https://instagram.com/ausathdzil"
-          target="_blank"
-          aria-label="Link to ausath's Instagram profile"
-        >
-          <InstagramIcon />
-        </a>
-      </li>
-      <li class="mr-5">
-        <a
-          href="https://open.spotify.com/user/ausaaath?si=v8FEhD6HSCm0wVZxkAWdew"
-          target="_blank"
-          aria-label="Link to ausath's Spotify profile"
-        >
-          <SpotifyIcon />
-        </a>
-      </li>
-      <li class="mr-0">
-        <a
-          href="https://open.spotify.com/user/ausaaath?si=v8FEhD6HSCm0wVZxkAWdew"
-          target="_blank"
-          aria-label="Link to ausath's Discord profile"
-        >
-          <DiscordIcon />
-        </a>
-      </li>
-    </ul>
+    <SocialLinks />
   </nav>
 </footer>
