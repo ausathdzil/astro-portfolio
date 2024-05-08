@@ -5,7 +5,13 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const projects = [
+interface projectsType {
+  title: string;
+  link: string;
+  description: React.ReactNode;
+}
+
+const projects: projectsType[] = [
   {
     title: "Bookshelf",
     link: "https://github.com/ausathdzil/bookshelf-app",
@@ -21,8 +27,8 @@ const projects = [
     link: "https://github.com/ausathdzil/social-links",
     description: (
       <p>
-        A simple social linktree. My first <strong>React</strong> 
-        and <strong>Tailwind CSS</strong> mini project.
+        A simple social linktree. 
+        My first <strong>React</strong> and <strong>Tailwind CSS</strong> mini project.
       </p>
     ),
 
@@ -38,30 +44,44 @@ const projects = [
   },
 ];
 
-export default function ProjectsAccordion() {
-  return (
-    <div className="flex flex-col lg:flex-row gap-4">
-      {projects.map((project, index) => (
-        <Accordion key={index} type="single" collapsible className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>{project.title}</AccordionTrigger>
+function chunkArray(array: projectsType[], chunkSize: number) {
+  const chunks = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    chunks.push(array.slice(i, i + chunkSize));
+  }
 
-            <AccordionContent>
-              {project.description}
-              
-              <a 
-                href={project.link} 
-                target="_blank"
-                className="underline underline-offset-8 hover:decoration-zinc-500"
-              >
-                <p className="mt-4">
-                  github repo 📂
-                </p>
-              </a>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+  return chunks;
+}
+
+const projectChunks = chunkArray(projects, 3);
+
+export default function ProjectsAccordion() {
+
+  return (
+    <>
+      {projectChunks.map((chunk, chunkIndex) => (
+        <div key={chunkIndex} className="flex flex-col lg:flex-row gap-4">
+          {chunk.map((project, index) => (
+            <Accordion key={index} type="single" collapsible className="w-full">
+              <AccordionItem value="item-1">
+                <AccordionTrigger>{project.title}</AccordionTrigger>
+
+                <AccordionContent>
+                  {project.description}
+                  
+                  <a 
+                    href={project.link} 
+                    target="_blank"
+                    className="underline underline-offset-8 hover:decoration-zinc-500"
+                  >
+                    <p className="mt-4">github repo 📂</p>
+                  </a>
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
+          ))}
+        </div>
       ))}
-    </div>
+    </>
   );
 }
