@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import AlbumCards from "./AlbumCards";
-import ArtistsCards from "./ArtistsCards";
+import ArtistCards from "./ArtistCards";
 
 export default function MusicTabs() {
   return (
@@ -16,7 +16,7 @@ export default function MusicTabs() {
         <AlbumCards />
       </TabsContent>
       <TabsContent value="artists">
-        <ArtistsCards />
+        <ArtistCards />
       </TabsContent>
     </Tabs>
   );

@@ -58,7 +58,8 @@ export default function ArtistsCards() {
         >
           <img
             src={artist.image}
-            alt={artist.name}
+            alt={`${artist.name}'s profile picture`}
+            loading="lazy"
             width="200px"
             className="rounded-full mb-4"
           />
