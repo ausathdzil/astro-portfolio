@@ -1,6 +1,6 @@
 ---
 import SkullIcon from "./icons/SkullIcon.astro";
-import PageLinks from "./PageLinks.tsx";
+import PageLinks from "./PageLinks.astro";
 import { ModeToggle } from "./ModeToggle";
 ---
 
@@ -19,9 +19,7 @@ import { ModeToggle } from "./ModeToggle";
       <p class="text-base text-zinc-500">wrath</p>
     </div>
     <div class="flex items-center">
-      <ul class="flex">
-        <PageLinks />
-      </ul>
+      <PageLinks />
 
       <div class="mr-0">
         <ModeToggle client:load />
@@ -29,7 +27,5 @@ import { ModeToggle } from "./ModeToggle";
     </div>
   </nav>
 
-  <hr
-    class="h-1 border-none bg-gradient-to-r from-emerald-500 to-sky-500 rounded"
-  />
+  <hr class="h-1 border-none bg-gradient-to-r from-emerald-500 to-sky-500 rounded" />
 </header>

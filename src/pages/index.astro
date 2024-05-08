@@ -1,6 +1,6 @@
 ---
+import ProjectsAccordion from "@/components/ProjectsAccordion";
 import Layout from "@/layouts/Layout.astro";
-import ProjectTabs from "@/components/ProjectTabs";
 ---
 
 <Layout title="wrath • home">
@@ -20,33 +20,18 @@ import ProjectTabs from "@/components/ProjectTabs";
   </article>
 
   <article class="mb-10 w-full">
-    <h1 class="text-xl font-bold mb-1.5">Projects</h1>
+    <h1 class="font-bold mb-4">Projects</h1>
 
-    <div class="h-[375px] overflow-auto">
-      <ProjectTabs client:load />
-    </div>
+    <ProjectsAccordion client:load />
   </article>
 
   <article class="mb-10">
-    <h1 class="text-xl font-bold mb-1.5">Works</h1>
+    <h1 class="font-bold mb-4">Works</h1>
 
-    <p class="text-lg">
+    <p class="text-base">
       Right now, I'm a part of the front-end developer team for an internal project 
       at <strong>KSM Android UPNVJ</strong>. We're currently building a Study Club 
       LMS for our members.
-    </p>
-  </article>
-
-  <article class="mb-10">
-    <h1 class="text-xl font-bold mb-1.5">Others</h1>
-
-    <p class="text-lg">
-      Aside from web development stuff, I learned programming with <strong>C</strong> in university. 
-      Doing stuff with C makes you learn <i>how things actually works</i> cause there's a lot 
-      less <strong>abstraction</strong> unlike modern programming languages. It really helps to 
-      understand something to its very basics, especially data structures. For example in C, 
-      there are no built-in functions for a lot of data structures like stack and queue. 
-      Learning how to make them from scratch helps me understand how they work better.
     </p>
   </article>
 </Layout>
