@@ -1,0 +1,35 @@
+---
+import SkullIcon from "./icons/SkullIcon.astro";
+import PageLinks from "./PageLinks.tsx";
+import { ModeToggle } from "./ModeToggle";
+---
+
+<header class="mb-10">
+  <nav class="mb-2 flex justify-between items-center gap-4">
+    <div class="flex justify-center items-center gap-2">
+      <a
+        href="/"
+        aria-label="return to homepage"
+      >
+        <SkullIcon />
+
+        <span class="sr-only">return to homepage</span>
+      </a>
+
+      <p class="text-base text-zinc-500">wrath</p>
+    </div>
+    <div class="flex items-center">
+      <ul class="flex">
+        <PageLinks />
+      </ul>
+
+      <div class="mr-0">
+        <ModeToggle client:load />
+      </div>
+    </div>
+  </nav>
+
+  <hr
+    class="h-1 border-none bg-gradient-to-r from-emerald-500 to-sky-500 rounded"
+  />
+</header>
