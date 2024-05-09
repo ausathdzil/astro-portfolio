@@ -1,6 +1,6 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import { albums } from '@/components/AlbumCards';
+import { albums } from '@/components/AlbumCards.astro';
 import { Separator } from "@/components/ui/separator"
 ---
 
@@ -10,6 +10,7 @@ import { Separator } from "@/components/ui/separator"
       src={albums[0].image} 
       alt={`${albums[0].title} album cover`}
       class="rounded-lg mb-4"
+      transition:name={`image-${albums[0].title}`}
     />
     <h1 class="text-xl font-bold">{albums[0].title}</h1>
     <p class="text-sm">{albums[0].artist}</p>

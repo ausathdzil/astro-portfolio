@@ -1,3 +1,4 @@
+---
 export const albums = [
   {
     title: "Voicenotes",
@@ -72,28 +73,25 @@ export const albums = [
     ],
   },
 ];
+---
 
-export default function AlbumCards() {
-  return (
-    <div className="mt-8 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
-      {albums.map((album, index) => (
-        <a 
-          href={`/album/${album.title}`}
-          key={index} 
-          className="flex flex-col justify-center items-center sm:items-start ">
-          <div className="hover:text-rose-500 text-center sm:text-left">
-            <img
-              src={album.image}
-              alt={`${album.title} album cover`}
-              loading="lazy"
-              className="rounded-lg mb-4"
-              width="200px"
-            />
-            <h1 className="font-semibold text-lg">{album.title}</h1>
-          </div>
-          <p className="text-sm">{album.artist}</p>
-        </a>
-      ))}
-    </div>
-  );
-}
+<div class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
+  {albums.map((album) => (
+    <a 
+      href={`/album/${album.title}`}
+      class="flex flex-col justify-center items-center sm:items-start ">
+      <div class="hover:text-rose-500 text-center sm:text-left">
+        <img
+          src={album.image}
+          alt={`${album.title} album cover`}
+          loading="lazy"
+          class="rounded-lg mb-4"
+          width="200px"
+          transition:name={`image-${album.title}`}
+        />
+        <h1 class="font-semibold text-lg">{album.title}</h1>
+      </div>
+      <p class="text-sm">{album.artist}</p>
+    </a>
+  ))}
+</div>
