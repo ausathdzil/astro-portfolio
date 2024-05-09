@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { albums } from '@/components/AlbumCards';
+import { Separator } from "@/components/ui/separator"
+---
+
+<Layout title={`${albums[0].title} by ${albums[0].artist}`}>
+  <div class="mb-8 flex flex-col justify-center items-center gap-2">
+    <img 
+      src={albums[0].image} 
+      alt={`${albums[0].title} album cover`}
+      class="rounded-lg mb-4"
+    />
+    <h1 class="text-xl font-bold">{albums[0].title}</h1>
+    <p class="text-sm">{albums[0].artist}</p>
+  </div>
+  <ul class="mb-8 flex flex-col gap-4">
+    {albums[0].songs.map((song, index) => (
+        <li class="group">
+          <a class="flex justify-between mb-3" href={song.link} target="_blank">
+            <p>{index + 1}. {song.title}</p>
+            <p>{song.duration}</p>
+          </a>
+          <Separator />
+        </li>
+    ))}
+  </ul>
+</Layout>

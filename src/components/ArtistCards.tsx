@@ -4,46 +4,6 @@ const artists = [
     image: "/charlie-puth.jpg",
     link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
   },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
-  {
-    name: "Charlie Puth",
-    image: "/charlie-puth.jpg",
-    link: "https://open.spotify.com/artist/6VuMaDnrHyPL1p4EHjYLi7"
-  },
 ];
 
 export default function ArtistsCards() {
