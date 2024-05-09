@@ -48,7 +48,7 @@ const artists = [
 
 export default function ArtistsCards() {
   return (
-    <div className="mt-8 mb-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div className="mt-8 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
       {artists.map((artist, index) => (
         <a 
           key={index} 
@@ -60,7 +60,7 @@ export default function ArtistsCards() {
             src={artist.image}
             alt={`${artist.name}'s profile picture`}
             loading="lazy"
-            width="200px"
+            width="150px"
             className="rounded-full mb-4"
           />
           <h1 className="font-semibold text-lg">{artist.name}</h1>

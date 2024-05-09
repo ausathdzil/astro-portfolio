@@ -50,7 +50,7 @@ const albums = [
 
 export default function AlbumCards() {
   return (
-    <div className="mt-8 mb-8 grid grid-cols-1 sm:grid-cols-3 gap-8">
+    <div className="mt-8 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
       {albums.map((album, index) => (
         <div 
           key={index} 
@@ -61,6 +61,7 @@ export default function AlbumCards() {
               alt={`${album.title} album cover`}
               loading="lazy"
               className="rounded-lg mb-4"
+              width="200px"
             />
             <h1 className="font-semibold text-lg">{album.title}</h1>
           </div>

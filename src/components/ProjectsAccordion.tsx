@@ -31,7 +31,6 @@ const projects: projectsType[] = [
         My first <strong>React</strong> and <strong>Tailwind CSS</strong> mini project.
       </p>
     ),
-
   },
   {
     title: "Terminal Quiz",
