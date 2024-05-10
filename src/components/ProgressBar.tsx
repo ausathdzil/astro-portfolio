@@ -10,6 +10,6 @@ export function ProgressBar({ languageProgress }: {languageProgress: number}) {
   }, [languageProgress]);
 
   return (
-    <Progress value={progress} className="w-full" />
+    <Progress value={progress} className="w-full" role="progressbar" aria-label="language progress" />
   );
 }

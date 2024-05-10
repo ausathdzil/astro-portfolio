@@ -9,8 +9,7 @@ export function getStaticPaths() {
   }));
 }
 
-const { params } = Astro;
-const { albumId } = params;
+const { albumId } = Astro.params;
 
 const currentAlbum = albums.find((album) => album.id === albumId);
 ---
@@ -23,7 +22,7 @@ const currentAlbum = albums.find((album) => album.id === albumId);
       class="rounded-lg mb-4"
       transition:name={`image-${currentAlbum?.title}`}
     />
-    <h1 class="text-xl font-bold">{currentAlbum?.title}</h1>
+    <h1 class="font-bold">{currentAlbum?.title}</h1>
     <p class="text-sm">{currentAlbum?.artist}</p>
   </div>
   <ul class="mb-8 flex flex-col gap-4">
@@ -36,9 +35,10 @@ const currentAlbum = albums.find((album) => album.id === albumId);
             target="_blank"
           >
             <p>
-              {index + 1}. {song.title}
+              <span class="text-zinc-500 dark:text-zinc-400 mr-4">{index + 1}.</span> 
+              <span class="font-semibold">{song.title}</span>
             </p>
-            <p>{song.duration}</p>
+            <p class="text-zinc-500 dark:text-zinc-400">{song.duration}</p>
           </a>
           <Separator />
         </li>
