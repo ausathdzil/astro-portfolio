@@ -1,6 +1,7 @@
 ---
 export const albums = [
   {
+    id: "1",
     title: "Voicenotes",
     image: "/voicenotes.png",
     artist: "Charlie Puth",
@@ -72,13 +73,81 @@ export const albums = [
       },
     ],
   },
+  {
+    id: "2",
+    title: "Superache",
+    image: "/superache.png",
+    artist: "Conan Gray",
+    songs: [
+      {
+        title: "Movies",
+        link: "https://open.spotify.com/track/6FH6fmlh9DbvssuEQyQEVd?si=2c4c65f331d44059",
+        duration: "3:35",
+      },
+      {
+        title: "People Watching",
+        link: "https://open.spotify.com/track/3TFoEJe5zNuHZStRboWPxg?si=7f88a40526f848ef",
+        duration: "2:38",
+      },
+      {
+        title: "Disaster",
+        link: "https://open.spotify.com/track/3SWGtKHaCFEUqfm9ydUFVw?si=bc30eb3bcff848d3",
+        duration: "2:33",
+      },
+      {
+        title: "Best Friend",
+        link: "https://open.spotify.com/track/6VZXTCIXbgypt0erc2U1Uk?si=b3c176f55aa943cf",
+        duration: "2:28",
+      },
+      {
+        title: "Astronomy",
+        link: "https://open.spotify.com/track/2JN3ugW1cEahbYw0I5mw5U?si=635d3de8afef492a",
+        duration: "4:03",
+      },
+      {
+        title: "Yours",
+        link: "https://open.spotify.com/track/3rPVtXLBfJz59U1LgrGHhb?si=11a1067dfbb048d9",
+        duration: "3:24",
+      },
+      {
+        title: "Jigsaw",
+        link: "https://open.spotify.com/track/6bOd4UM7FaQOZXR2MBzSPi?si=0696d331208d4d5c",
+        duration: "3:28",
+      },
+      {
+        title: "Family Line",
+        link: "https://open.spotify.com/track/0iNZGC211wst3VjtobNnC5?si=10cd8d5876d34fb3",
+        duration: "3:36",
+      },
+      {
+        title: "Summer Child",
+        link: "https://open.spotify.com/track/6vOcpn5zG3tAgSs5TCYR1o?si=2789fcfc98904ce5",
+        duration: "2:59",
+      },
+      {
+        title: "Footnote",
+        link: "https://open.spotify.com/track/7jrYMBC1bS1SCwxE2bt3AP?si=8631bc67d95c45d5",
+        duration: "3:44",
+      },
+      {
+        title: "Memories",
+        link: "https://open.spotify.com/track/5UXJzLFdBn6u9FJTCnoHrH?si=49f302f0faea4b46",
+        duration: "4:08",
+      },
+      {
+        title: "The Exit",
+        link: "https://open.spotify.com/track/6PDWMQJ55ZYrGrSx3EZzl4?si=f74e5c72c4db440b",
+        duration: "3:41",
+      },
+    ]
+  }
 ];
 ---
 
 <div class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
   {albums.map((album) => (
     <a 
-      href={`/album/${album.title}`}
+      href={`/album/${album.id}`}
       class="flex flex-col justify-center items-center sm:items-start ">
       <div class="hover:text-rose-500 dark:hover:text-cyan-500 text-center sm:text-left">
         <img
@@ -86,7 +155,7 @@ export const albums = [
           alt={`${album.title} album cover`}
           loading="lazy"
           class="rounded-lg mb-4"
-          width="200px"
+          width="220px"
           transition:name={`image-${album.title}`}
         />
         <h1 class="font-semibold text-lg">{album.title}</h1>

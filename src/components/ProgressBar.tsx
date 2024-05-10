@@ -6,7 +6,7 @@ export function ProgressBar({ languageProgress }: {languageProgress: number}) {
 
   useEffect(() => {
     const timer = setTimeout(() => setProgress(languageProgress), 250);
-    return () => clearTimeout(timer)
+    return () => clearTimeout(timer);
   }, [languageProgress]);
 
   return (

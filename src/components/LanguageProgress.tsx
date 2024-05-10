@@ -15,7 +15,7 @@ const languages = [
   },
 ];
 
-export default function Language() {
+export default function LanguageProgress() {
   return (
     <div className="flex flex-col gap-4 mb-8">
       {languages.map((language) => (
