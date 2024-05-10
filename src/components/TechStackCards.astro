@@ -1,0 +1,27 @@
+---
+const techStack = [
+  {
+    name: "Astro",
+    image: "/astro-icon.svg",
+    link: "https://astro.build/"
+  },
+  {
+    name: "React",
+    image: "/react-icon.svg",
+    link: "https://react.dev/"
+  },
+  {
+    name: "Tailwind CSS",
+    image: "/tailwind-icon.svg",
+    link: "https://tailwindcss.com/"
+  },
+];
+---
+
+<div class="flex flex-col sm:flex-row justify-start items-center gap-8 mb-8">
+  {techStack.map((tech) => (
+    <a href={tech.link} target="_blank" aria-label={`link to ${tech.name} page`}>
+      <img class="m-4 transition ease-in-out hover:scale-105" width="70px" src={tech.image} alt={`${tech.name} logo`}>
+    </a>  
+  ))}
+</div>

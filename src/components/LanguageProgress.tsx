@@ -1,17 +1,22 @@
 import { ProgressBar } from "./ProgressBar";
 
-const languages = [
+interface languagesType {
+  name: string;
+  progress: number;
+}
+
+const languages: languagesType[] = [
   {
     name: "JavaScript",
-    progress: 85,
+    progress: 60,
   },
   {
     name: "TypeScript",
-    progress: 10,
+    progress: 30,
   },
   {
     name: "C",
-    progress: 5,
+    progress: 10,
   },
 ];
 
