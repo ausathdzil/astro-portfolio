@@ -1,35 +1,11 @@
 ---
-import GitHubIcon from "@/components/icons/GitHubIcon.astro";
-import InstagramIcon from "@/components/icons/InstagramIcon.astro";
-import SpotifyIcon from "@/components/icons/SpotifyIcon.astro";
-import DiscordIcon from "@/components/icons/DiscordIcon.astro";
+import { type Social, getSocials } from "@/lib/socials";
 
-const socialMediaLinks = [
-  {
-    href: "https://github.com/ausathdzil",
-    label: "Link to ausath's GitHub profile",
-    Icon: GitHubIcon,
-  },
-  {
-    href: "https://instagram.com/ausathdzil",
-    label: "Link to ausath's Instagram profile",
-    Icon: InstagramIcon,
-  },
-  {
-    href: "https://open.spotify.com/user/ausaaath?si=v8FEhD6HSCm0wVZxkAWdew",
-    label: "Link to ausath's Spotify profile",
-    Icon: SpotifyIcon,
-  },
-  {
-    href: "https://discord.com/users/ausathdzil",
-    label: "Link to ausath's Discord profile",
-    Icon: DiscordIcon,
-  },
-];
+const socialLinks: Social[] = getSocials();
 ---
 
 <ul class="flex">
-  {socialMediaLinks.map(link => (
+  {socialLinks.map(link => (
     <li class="mr-5">
       <a
         href={link.href}

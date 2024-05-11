@@ -4,46 +4,11 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { type Project, getProjects } from "@/lib/projects";
 
-interface projectsType {
-  title: string;
-  link: string;
-  description: React.ReactNode;
-}
+const projects: Project[] = getProjects();
 
-const projects: projectsType[] = [
-  {
-    title: "Bookshelf",
-    link: "https://github.com/ausathdzil/bookshelf-app",
-    description: (
-      <p>
-        Bookshelf app made with <strong>vanilla JavaScript</strong>. 
-        This is my first mini project diving into the front-end world.
-      </p>
-    ),
-  },
-  {
-    title: "Social Linktree",
-    link: "https://github.com/ausathdzil/social-links",
-    description: (
-      <p>
-        A simple social linktree. 
-        My first <strong>React</strong> and <strong>Tailwind CSS</strong> mini project.
-      </p>
-    ),
-  },
-  {
-    title: "Terminal Quiz",
-    link: "https://github.com/ausathdzil/quiz-app",
-    description: (
-      <p>
-        A quiz game that runs on your terminal. Made with <strong>C</strong>.
-      </p>
-    ),
-  },
-];
-
-function chunkArray(array: projectsType[], chunkSize: number) {
+function chunkArray(array: Project[], chunkSize: number) {
   const chunks = [];
   for (let i = 0; i < array.length; i += chunkSize) {
     chunks.push(array.slice(i, i + chunkSize));
@@ -72,6 +37,7 @@ export default function ProjectsAccordion() {
                     href={project.link} 
                     target="_blank"
                     className="underline underline-offset-8 hover:decoration-zinc-500"
+                    aria-label={`link to ${project.title} github repo`}
                   >
                     <p className="mt-4">github repo 📂</p>
                   </a>

@@ -1,24 +1,7 @@
 import { ProgressBar } from "./ProgressBar";
+import { type Language, getLanguages } from "@/lib/languages";
 
-interface languagesType {
-  name: string;
-  progress: number;
-}
-
-const languages: languagesType[] = [
-  {
-    name: "JavaScript",
-    progress: 60,
-  },
-  {
-    name: "TypeScript",
-    progress: 30,
-  },
-  {
-    name: "C",
-    progress: 10,
-  },
-];
+const languages: Language[] = getLanguages();
 
 export default function LanguageProgress() {
   return (
