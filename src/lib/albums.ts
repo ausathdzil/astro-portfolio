@@ -153,7 +153,139 @@ export function getAlbums(): Album[] {
           link: "https://open.spotify.com/track/6PDWMQJ55ZYrGrSx3EZzl4?si=f74e5c72c4db440b",
           duration: "3:41",
         },
-      ]
-    }
+      ],
+    },
+    {
+      id: "3",
+      title: "THANK YOU BLUE",
+      image: "/thank-you-blue.jpg",
+      artist: "Daoko",
+      songs: [
+        {
+          title: "打上花火",
+          link: "https://open.spotify.com/track/4IouQaO9GkaHC7AtMErdSa?si=8cfa3e35427545ac",
+          duration: "4:49",
+        },
+        {
+          title: "ステップアップLOVE",
+          link: "https://open.spotify.com/track/2qdkg8NGkGhukt8UQcVYci?si=e5544b3be6984973",
+          duration: "4:16",
+        },
+        {
+          title: "Juicy",
+          link: "https://open.spotify.com/track/7k5UPBkjwMnaHOxPjbYswQ?si=99026052995a44f8",
+          duration: "3:44",
+        },
+        {
+          title: "さみしいかみさま",
+          link: "https://open.spotify.com/track/1jsuNY2norISRscbYj5ISS?si=4a5e51aaf5ef4dd4",
+          duration: "4:29",
+        },
+        {
+          title: "ShibuyaK",
+          link: "https://open.spotify.com/track/6hUO0kmNwu0ge6Bm8AXXc7?si=02e93b9c87184069",
+          duration: "4:22",
+        },
+        {
+          title: "BANG!",
+          link: "https://open.spotify.com/track/5gOEWGhkbnYj3zuStB1N28?si=f345aafeef664ede",
+          duration: "3:39",
+        },
+        {
+          title: "ダイスキ with TeddyLoid",
+          link: "https://open.spotify.com/track/6xN2yWQxi4fL7cVeo9281L?si=4b979ec22b304851",
+          duration: "3:20",
+        },
+        {
+          title: "拝啓グッバイさようなら",
+          link: "https://open.spotify.com/track/7eIthkKvLLeGc9FfxRdOjt?si=0aac145b9acc449c",
+          duration: "3:46",
+        },
+        {
+          title: "同じ夜",
+          link: "https://open.spotify.com/track/0lvirp6LgHwkRo7XvrNkxt?si=83e5965bdf534bc1",
+          duration: "5:40",
+        },
+        {
+          title: "GRY",
+          link: "https://open.spotify.com/track/6V03d77GJp5QTC0rHTyTom?si=9d662ddb0da841be",
+          duration: "2:57",
+        },
+        {
+          title: "もしも僕らがGAMEの主役で",
+          link: "https://open.spotify.com/track/6iKzGrRewL0aAjwzxdQFVp?si=122572867c6d40d7",
+          duration: "3:49",
+        },
+        {
+          title: "ゆめみてたのあたし",
+          link: "https://open.spotify.com/track/58P3VN60GEMmzG3AlnxINg?si=6c2b6d8915c04bf5",
+          duration: "4:31",
+        },
+        {
+          title: "Cinderella step",
+          link: "https://open.spotify.com/track/5n13HUQaAC0fo1Jb8mhQqq?si=2e8bf2e2d2c54eae",
+          duration: "4:05",
+        },
+        {
+          title: "ワンルーム・シーサイド・ステップ",
+          link: "https://open.spotify.com/track/4e1VrjQPfuONA6FpyVEiW6?si=2c8fea284c7d4cb8",
+          duration: "4:24",
+        },
+      ],
+    },
+    {
+      id: "4",
+      title: "Kid Krow",
+      image: "/kid-krow.jpg",
+      artist: "Conan Gray",
+      songs: [
+
+      ],
+    },
+    {
+      id: "5",
+      title: "Over the Rainbow",
+      image: "/over-the-rainbow.png",
+      artist: "SUKISHA • kiki vivi lily",
+      songs: [
+
+      ],
+    },
+    {
+      id: "6",
+      title: "Sketch",
+      image: "/sketch.png",
+      artist: "Lilas Ikuta",
+      songs: [
+
+      ],
+    },
+    {
+      id: "7",
+      title: "Tasty",
+      image: "/tasty.jpg",
+      artist: "kiki vivi livy",
+      songs: [
+
+      ],
+    },
+    {
+      id: "8",
+      title: "Shawn Mendes",
+      image: "/shawn-mendes.png",
+      artist: "Shawn Mendes",
+      songs: [
+
+      ],
+    },
+    {
+      id: "9",
+      title: "CHARLIE",
+      image: "/charlie.jpg",
+      artist: "Charlie Puth",
+      songs: [
+
+      ],
+    },
   ];
-} 
+}

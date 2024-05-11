@@ -8,7 +8,7 @@ const albums: Album[] = getAlbums();
   {albums.map((album) => (
     <a 
       href={`/album/${album.id}`}
-      class="flex flex-col justify-center items-center sm:items-start ">
+      class="flex flex-col justify-center items-center sm:items-start h-full">
       <div class="hover:text-rose-500 dark:hover:text-cyan-500 text-center sm:text-left">
         <img
           src={album.image}
@@ -18,9 +18,9 @@ const albums: Album[] = getAlbums();
           width="220px"
           transition:name={`image-${album.title}`}
         />
-        <h1 class="font-semibold text-lg">{album.title}</h1>
+        <h1 class="hidden sm:inline font-semibold text-lg">{album.title}</h1>
       </div>
-      <p class="text-sm">{album.artist}</p>
+      <p class="hidden sm:inline text-sm">{album.artist}</p>
     </a>
   ))}
 </div>

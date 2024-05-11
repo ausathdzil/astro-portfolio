@@ -11,10 +11,10 @@ export function getPageLinks(): Page[] {
       link: "/music/",
       label: "Link to ausath's music playlist",
     },
-    {
-      name: "blog",
-      link: "/blog/",
-      label: "Link to ausath's blog",
-    },
+    // {
+    //   name: "blog",
+    //   link: "/blog/",
+    //   label: "Link to ausath's blog",
+    // },
   ];
 }

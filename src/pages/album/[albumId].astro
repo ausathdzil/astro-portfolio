@@ -22,6 +22,7 @@ const currentAlbum = albums.find((album) => album.id === albumId);
       src={currentAlbum?.image}
       alt={`${currentAlbum?.title} album cover`}
       class="rounded-lg mb-4"
+      width="300px"
       transition:name={`image-${currentAlbum?.title}`}
     />
     <h1 class="font-bold">{currentAlbum?.title}</h1>
@@ -30,7 +31,7 @@ const currentAlbum = albums.find((album) => album.id === albumId);
   <ul class="mb-8 flex flex-col gap-4">
     {
       currentAlbum?.songs.map((song, index) => (
-        <li class="group">
+        <li class="group text-sm sm:text-xl">
           <a
             class="flex justify-between mb-3"
             href={song.link}

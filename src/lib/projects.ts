@@ -19,7 +19,7 @@ export function getProjects(): Project[] {
     {
       title: "Terminal Quiz",
       link: "https://github.com/ausathdzil/quiz-app",
-      description: "A Quiz game that runs on your terminal, made with C.",
+      description: "A quiz game that runs on your terminal, made with C.",
     },
   ];
 }
