@@ -13,10 +13,11 @@ const techStack: TechStack[] = getTechStack();
         aria-label={`link to ${tech.name} page`}
       >
         <img
-          class="m-4 transition ease-in-out hover:scale-105"
-          width="70px"
           src={tech.image}
           alt={`${tech.name} logo`}
+          width="70px"
+          class="m-4 transition ease-in-out hover:scale-105"
+          loading="lazy"
         />
       </a>
     ))

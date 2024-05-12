@@ -1,5 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
+import Image from "astro/components/Image.astro";
 import { type Album, getAlbums } from "@/lib/albums";
 import { Separator } from "@/components/ui/separator";
 
@@ -18,12 +19,14 @@ const currentAlbum = albums.find((album) => album.id === albumId);
 
 <Layout title={`${currentAlbum?.title} by ${currentAlbum?.artist}`}>
   <div class="mb-8 flex flex-col justify-center items-center gap-2">
-    <img
-      src={currentAlbum?.image}
+    <Image
+      src={currentAlbum?.image ?? ''}
       alt={`${currentAlbum?.title} album cover`}
       class="rounded-lg mb-4"
-      width="300px"
-      transition:name={`image-${currentAlbum?.title}`}
+      width="300"
+      height="300"
+      transition:name={`image-${currentAlbum?.id}`}
+      loading="lazy"
     />
     <h1 class="font-bold">{currentAlbum?.title}</h1>
     <p class="text-sm">{currentAlbum?.artist}</p>
@@ -31,7 +34,7 @@ const currentAlbum = albums.find((album) => album.id === albumId);
   <ul class="mb-8 flex flex-col gap-4">
     {
       currentAlbum?.songs.map((song, index) => (
-        <li class="group text-sm sm:text-xl">
+        <li class="group text-sm lg:text-xl">
           <a
             class="flex justify-between mb-3"
             href={song.link}

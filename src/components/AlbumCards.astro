@@ -1,4 +1,5 @@
 ---
+import Image from "astro/components/Image.astro";
 import { type Album, getAlbums } from "@/lib/albums";
 
 const albums: Album[] = getAlbums();
@@ -8,19 +9,20 @@ const albums: Album[] = getAlbums();
   {albums.map((album) => (
     <a 
       href={`/album/${album.id}`}
+      transition:name={`image-${album.id}`}
       class="flex flex-col justify-center items-center sm:items-start h-full">
       <div class="hover:text-rose-500 dark:hover:text-cyan-500 text-center sm:text-left">
-        <img
+        <Image
           src={album.image}
           alt={`${album.title} album cover`}
-          loading="lazy"
           class="rounded-lg mb-4"
-          width="220px"
-          transition:name={`image-${album.title}`}
+          width="220"
+          height="220"
+          loading="lazy"
         />
-        <h1 class="hidden sm:inline font-semibold text-lg">{album.title}</h1>
+        <h1 class="hidden lg:inline font-semibold text-lg">{album.title}</h1>
       </div>
-      <p class="hidden sm:inline text-sm">{album.artist}</p>
+      <p class="hidden lg:inline text-sm">{album.artist}</p>
     </a>
   ))}
 </div>
