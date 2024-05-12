@@ -239,7 +239,66 @@ export function getAlbums(): Album[] {
       image: "/kid-krow.jpg",
       artist: "Conan Gray",
       songs: [
-
+        {
+          title: "Comfort Crowd",
+          link: "https://open.spotify.com/track/6uaBrivDHCaV0uBTiwHTUi?si=ea3e2e687e124948",
+          duration: "2:54",
+        },
+        {
+          title: "Widh You Were Sober",
+          link: "https://open.spotify.com/track/0kn2gu8Pd03DiYHzRvX2Xk?si=331512bcbeeb48a5",
+          duration: "2:48",
+        },
+        {
+          title: "Maniac",
+          link: "https://open.spotify.com/track/6KfoDhO4XUWSbnyKjNp9c4?si=d65106c0d80f4419",
+          duration: "3:05",
+        },
+        {
+          title: "(Online Love)",
+          link: "https://open.spotify.com/track/1WVunZLZM2zLTm5rAvKZkF?si=39eef2dc1a684107",
+          duration: "0:37",
+        },
+        {
+          title: "Checkmate",
+          link: "https://open.spotify.com/track/3SnpCALgmzVy7k07aAXbuA?si=dfc73d077a674ade",
+          duration: "2:28",
+        },
+        {
+          title: "The Cut That Always Bleeds",
+          link: "https://open.spotify.com/track/7wTqEW5nrMhvyEhEyTnOMd?si=523c9c08ff7a4b1c",
+          duration: "3:51",
+        },
+        {
+          title: "Fight or Flight",
+          link: "https://open.spotify.com/track/0yfDVYKVKYrHknz9gVOlQr?si=4859e01bdf464e7f",
+          duration: "2:51",
+        },
+        {
+          title: "Affluenza",
+          link: "https://open.spotify.com/track/0vq7fkHZl2khMonn5G7d9l?si=231be634d79f443f",
+          duration: "3:19",
+        },
+        {
+          title: "(Can We Be Friends?)",
+          link: "https://open.spotify.com/track/05JtBVWRtSzqLoj7jj30kn?si=79017b0872384433",
+          duration: "0:57",
+        },
+        {
+          title: "Heather",
+          link: "https://open.spotify.com/track/4xqrdfXkTW4T0RauPLv3WA?si=9fa8adc5d9244023",
+          duration: "3:18",
+        },
+        {
+          title: "Little League",
+          link: "https://open.spotify.com/track/3XOHxCoPkXW0pvR6xl4f0M?si=c95dc90413374525",
+          duration: "3:14",
+        },
+        {
+          title: "The Story",
+          link: "https://open.spotify.com/track/5GVPVxgdgTKJFxSxLVIw1A?si=118b5d6544f04b9b",
+          duration: "4:05",
+        },
       ],
     },
     {
@@ -248,7 +307,56 @@ export function getAlbums(): Album[] {
       image: "/over-the-rainbow.png",
       artist: "SUKISHA • kiki vivi lily",
       songs: [
-
+        {
+          title: "Departure",
+          link: "https://open.spotify.com/track/16pa2RBOVK2cZj8oCmHtyI?si=ab43f48f61af4091",
+          duration: "0:57",
+        },
+        {
+          title: "Rainbow Town",
+          link: "https://open.spotify.com/track/2znO8k9QLHyApE0vtagvcR?si=1e4bd817611b402d",
+          duration: "3:58",
+        },
+        {
+          title: "The Summer Storm Is Coming",
+          link: "https://open.spotify.com/track/10IsO74xf5xG39vE5YUF5r?si=b7f85a7fb20e4665",
+          duration: "1:06",
+        },
+        {
+          title: "Blue in Green",
+          link: "https://open.spotify.com/track/6EiGHN6OX3rPyPdqymU3V7?si=52859623d6144d96",
+          duration: "4:41",
+        },
+        {
+          title: "Falling Asleep",
+          link: "https://open.spotify.com/track/1YLoma5YAWZcFt6JwIh3ru?si=7e3ee5c39c4d46f9",
+          duration: "1:21",
+        },
+        {
+          title: "Pink Jewelry Dream",
+          link: "https://open.spotify.com/track/2RxZfHtvcfMrmrhWc8WQTn?si=3b8ec92eb2b84aa6",
+          duration: "4:02",
+        },
+        {
+          title: "Winter Stroll",
+          link: "https://open.spotify.com/track/5dgbmWq5u4DvrFzsiVbVuX?si=87056ba6c2c54082",
+          duration: "1:25",
+        },
+        {
+          title: "Gray Spring",
+          link: "https://open.spotify.com/track/4OiiPUJP083S23njuSJQca?si=498928a7c7704d63",
+          duration: "3:12",
+        },
+        {
+          title: "Destination",
+          link: "https://open.spotify.com/track/4LfoBoFrWtKxmImrzOeXIQ?si=087f21b002a14154",
+          duration: "0:59",
+        },
+        {
+          title: "Rainbow Town - tofubeats remix",
+          link: "https://open.spotify.com/track/5dvaFQC17VGFWZHlhbLHV9?si=cf1761307d634184",
+          duration: "5:40",
+        },
       ],
     },
     {
@@ -257,7 +365,61 @@ export function getAlbums(): Album[] {
       image: "/sketch.png",
       artist: "Lilas Ikuta",
       songs: [
-
+        {
+          title: "Answer",
+          link: "https://open.spotify.com/track/0avegfB0TQ8cGDk9nuxcOQ?si=89e94e9df1244675",
+          duration: "4:02",
+        },
+        {
+          title: "サークル",
+          link: "https://open.spotify.com/track/5sRnmEbAVSOcfqNlVwTfQe?si=0cc93e4815024141",
+          duration: "3:15",
+        },
+        {
+          title: "スパークル",
+          link: "https://open.spotify.com/track/3MR8qQiK1Bydhw9WjAzwzU?si=fe98bbe82ac84a8d",
+          duration: "3:30",
+        },
+        {
+          title: "Midnight Talk",
+          link: "https://open.spotify.com/track/7hcU6lOvSCniyGnSmTNjks?si=6c50e56965c14f27",
+          duration: "3:39",
+        },
+        {
+          title: "蒲公英",
+          link: "https://open.spotify.com/track/7D4jDmHtDGiUSdf6BBb29C?si=4a8664aba7804d57",
+          duration: "3:11",
+        },
+        {
+          title: "JUMP",
+          link: "https://open.spotify.com/track/6eBmuFpslaDqzWD8q14zPx?si=7266b3f8389e44ce",
+          duration: "3:47",
+        },
+        {
+          title: "レンズ",
+          link: "https://open.spotify.com/track/6RiJ001BNFvjcOvt8r6VNG?si=cbc8eff956824ef9",
+          duration: "3:53",
+        },
+        {
+          title: "吉祥寺",
+          link: "https://open.spotify.com/track/4tRQTvViZw91Xk2Z03jnYB?si=fb432c446780407d",
+          duration: "2:49",
+        },
+        {
+          title: "ヒカリ",
+          link: "https://open.spotify.com/track/0yufeKCZsUBAoUAprazz9C?si=ebe1c315043b4424",
+          duration: "4:04",
+        },
+        {
+          title: "宝石",
+          link: "https://open.spotify.com/track/4LbC3lgG4A54EiYxl3uDsl?si=0901173f6e9242a7",
+          duration: "4:15",
+        },
+        {
+          title: "ロマンスの約束",
+          link: "https://open.spotify.com/track/1tevypbWcDiPoUSlxKkaUu?si=55f401a8c85b4e8a",
+          duration: "3:42",
+        },
       ],
     },
     {
@@ -266,7 +428,51 @@ export function getAlbums(): Album[] {
       image: "/tasty.jpg",
       artist: "kiki vivi livy",
       songs: [
-
+        {
+          title: "Intro : wip",
+          link: "https://open.spotify.com/track/1u70zo2lQkGdITB0HVUvDi?si=22493f0935ec456d",
+          duration: "0:42",
+        },
+        {
+          title: "Lazy",
+          link: "https://open.spotify.com/track/6pfnbN59U4lnlkMGphwaiU?si=b2613a86757240a5",
+          duration: "3:53",
+        },
+        {
+          title: "手を触れたら",
+          link: "https://open.spotify.com/track/1OssVI7ZvMm76xzjMSini2?si=dd0927a2efda4140",
+          duration: "3:39",
+        },
+        {
+          title: "Yum Yum",
+          link: "https://open.spotify.com/track/17xudZHGjUPBW3Bav357tq?si=b3c4ceed2d7042a5",
+          duration: "3:37",
+        },
+        {
+          title: "Whiskey",
+          link: "https://open.spotify.com/track/7jC7Moj68Gby1jfMGmQNCh?si=92b21b1416f54fd3",
+          duration: "4:11",
+        },
+        {
+          title: "Interlude : Tasty",
+          link: "https://open.spotify.com/track/1GNTai12qiuMLPceRTZXp1?si=1ca5e668d6704a39",
+          duration: "1:01",
+        },
+        {
+          title: "You Were Mine",
+          link: "https://open.spotify.com/track/1euxfjrD0QvW6OI5UjFTH3?si=3c40e4e3ecfb4ae2",
+          duration: "2:56",
+        },
+        {
+          title: "New Day",
+          link: "https://open.spotify.com/track/0bisB6eJdWyZuXauXgzMnF?si=bc4fac44fc8c404a",
+          duration: "4:15",
+        },
+        {
+          title: "Onion Soup",
+          link: "https://open.spotify.com/track/2rChMfRrGeMMChLYpqKIkO?si=904ccdcde29d4f7f",
+          duration: "4:09",
+        },
       ],
     },
     {
@@ -275,7 +481,76 @@ export function getAlbums(): Album[] {
       image: "/shawn-mendes.png",
       artist: "Shawn Mendes",
       songs: [
-
+        {
+          title: "In My Blood",
+          link: "https://open.spotify.com/track/2QZ7WLBE8h2y1Y5Fb8RYbH?si=74526d7146254ec6",
+          duration: "3:31",
+        },
+        {
+          title: "Fallin' All In You",
+          link: "https://open.spotify.com/track/5EYBryPOgIEPB7r5QIy6eG?si=b694d6dbc459476b",
+          duration: "3:55",
+        },
+        {
+          title: "Where Were You In The Moring?",
+          link: "https://open.spotify.com/track/376Gg7Oxo5C5jUWDWpVXeI?si=afd7b0acb3ff4edf",
+          duration: "3:20",
+        },
+        {
+          title: "Nervous",
+          link: "https://open.spotify.com/track/5wxurz8J6YlyQRNnGN8zXS?si=06d64e75dce14084",
+          duration: "2:44",
+        },
+        {
+          title: "Like To Be You (feat. Julia Michaels)",
+          link: "https://open.spotify.com/track/2IssBpPtHcViZL5vYQNHhA?si=5446ae58b9874355",
+          duration: "2:39",
+        },
+        {
+          title: "Lost In Japan",
+          link: "https://open.spotify.com/track/79esEXlqqmq0GPz0xQSZTV?si=3f6c370ae90a4b18",
+          duration: "3:21",
+        },
+        {
+          title: "Particular Taste",
+          link: "https://open.spotify.com/track/4BH9zDv1Ys6kw0j3lU1hTx?si=6fb1d1696efa437c",
+          duration: "2:55",
+        },
+        {
+          title: "Because I Had You",
+          link: "https://open.spotify.com/track/1RRZSm4akqNyMOsPUhw4cb?si=4795e1a92c104c8e",
+          duration: "2:22",
+        },
+        {
+          title: "Why",
+          link: "https://open.spotify.com/track/3XeqINnregzwBJNg7RyyH4?si=eb87a5910f0348ed",
+          duration: "3:58",
+        },
+        {
+          title: "Youth (feat. Khalid)",
+          link: "https://open.spotify.com/track/1h0yImRPIVAjhhHeNVlTuC?si=beb09154ea534863",
+          duration: "3:10",
+        },
+        {
+          title: "Queen",
+          link: "https://open.spotify.com/track/6D8FZWtCQRtQUVT3mpjrZs?si=ff79c4eb48e84268",
+          duration: "3:24",
+        },
+        {
+          title: "Perfectly Wrong",
+          link: "https://open.spotify.com/track/6nat4Z7iRKWVk1qngQqI0Q?si=566e61bb23d44306",
+          duration: "3:32",
+        },
+        {
+          title: "Mutual",
+          link: "https://open.spotify.com/track/5gW3kI83886nVV9apaFLWu?si=2c537e4f88e44547",
+          duration: "2:28",
+        },
+        {
+          title: "When You're Ready",
+          link: "https://open.spotify.com/track/6bNcbh4SxQDU0BHa4Dj3wx?si=eab4685d69734820",
+          duration: "2:49",
+        },
       ],
     },
     {
@@ -284,7 +559,66 @@ export function getAlbums(): Album[] {
       image: "/charlie.jpg",
       artist: "Charlie Puth",
       songs: [
-
+        {
+          title: "That's Hilarious",
+          link: "https://open.spotify.com/track/0wPKDeY4fZXT6k9bzV0kx0?si=3dab3cb72ce04f4a",
+          duration: "2:24",
+        },
+        {
+          title: "Charlie Be Quiet!",
+          link: "https://open.spotify.com/track/3E9es0SK2EusrHA7IaO7Zu?si=0a3b7c7651204765",
+          duration: "2:08",
+        },
+        {
+          title: "Light Switch",
+          link: "https://open.spotify.com/track/5Q4lCfjJ1aht8YZOGFbC5U?si=c82a08c5375243d4",
+          duration: "3:07",
+        },
+        {
+          title: "There's A First Time For Everything",
+          link: "https://open.spotify.com/track/0I3FXz5RssOlMNI0FmPAkc?si=b2c97af852bb4c94",
+          duration: "2:16",
+        },
+        {
+          title: "Smells Like Me",
+          link: "https://open.spotify.com/track/0OM84HfW4XX1kmwCMDPmcS?si=0c8b23a1ba9d4382",
+          duration: "3:24",
+        },
+        {
+          title: "Left and Right (Feat. Jung Kook of BTS)",
+          link: "https://open.spotify.com/track/1tGq9MNEmWGevwtiBCdrbk?si=b6fa64a8234b4094",
+          duration: "2:34",
+        },
+        {
+          title: "Loser",
+          link: "https://open.spotify.com/track/4oTn7ylKtjeMYwxatEVFAt?si=07815d93a5da4275",
+          duration: "3:24",
+        },
+        {
+          title: "When You're Sad I'm Sad",
+          link: "https://open.spotify.com/track/4JC4Gj3DcAkwh9rvBeYoXy?si=3342ed4203744f55",
+          duration: "2:54",
+        },
+        {
+          title: "Marks On My Neck",
+          link: "https://open.spotify.com/track/55ruPNJ55uKjtm77nf3lPD?si=90a69589e52742a7",
+          duration: "2:18",
+        },
+        {
+          title: "Tears On My Piano",
+          link: "https://open.spotify.com/track/7mWBvNosCez1ry9f1ba197?si=8133098326f94b58",
+          duration: "3:01",
+        },
+        {
+          title: "I Don't Think That I Like Her",
+          link: "https://open.spotify.com/track/0Ts1lnK3lYa2dwE2orDJc5?si=e5586fa33d1140d1",
+          duration: "3:08",
+        },
+        {
+          title: "No More Drama",
+          link: "https://open.spotify.com/track/2g3afkZqrBxT9RWNSPSWa7?si=3dee52b55af14af1",
+          duration: "2:20",
+        },
       ],
     },
   ];
