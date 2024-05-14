@@ -24,10 +24,10 @@ export default function ProjectsAccordion() {
   return (
     <>
       {projectChunks.map((chunk, chunkIndex) => (
-        <div key={chunkIndex} className="flex flex-col lg:flex-row gap-4">
+        <div key={chunkIndex} className="flex flex-col lg:flex-row gap-8 mb-8">
           {chunk.map((project, index) => (
-            <Accordion key={index} type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
+            <Accordion key={index} type="single" defaultValue={`item-${index + 1}`} collapsible className="w-full">
+              <AccordionItem value={`item-${index + 1}`} className="md:mb-8">
                 <AccordionTrigger>{project.title}</AccordionTrigger>
 
                 <AccordionContent>

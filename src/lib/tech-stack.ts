@@ -1,25 +1,28 @@
+import AstroIcon from "@/components/icons/AstroIcon.astro";
+import ReactIcon from "@/components/icons/ReactIcon.astro";
+import TailwindIcon from "@/components/icons/TailwindIcon.astro";
 export interface TechStack {
   name: string;
-  image: string;
   link: string;
+  Icon: any;
 }
 
 export function getTechStack(): TechStack[] {
   return [
     {
-      name: "Astro",
-      image: "/astro-icon.svg",
-      link: "https://astro.build/",
+      name: "React",
+      link: "https://react.dev/",
+      Icon: ReactIcon,
     },
     {
-      name: "React",
-      image: "/react-icon.svg",
-      link: "https://react.dev/",
+      name: "Astro",
+      link: "https://astro.build/",
+      Icon: AstroIcon,
     },
     {
       name: "Tailwind CSS",
-      image: "/tailwind-icon.svg",
       link: "https://tailwindcss.com/",
+      Icon: TailwindIcon,
     },
   ];
 }
