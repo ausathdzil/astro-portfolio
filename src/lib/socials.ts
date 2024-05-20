@@ -1,12 +1,12 @@
-import GitHubIcon from "@/components/icons/GitHubIcon.astro";
-import InstagramIcon from "@/components/icons/InstagramIcon.astro";
-import SpotifyIcon from "@/components/icons/SpotifyIcon.astro";
-import DiscordIcon from "@/components/icons/DiscordIcon.astro";
+import GitHubLogo from "@/components/icons/GitHubLogo.astro";
+import InstagramLogo from "@/components/icons/InstagramLogo.astro";
+import SpotifyLogo from "@/components/icons/SpotifyLogo.astro";
+import DiscordLogo from "@/components/icons/DiscordLogo.astro";
 
 export interface Social {
   href: string;
   label: string;
-  Icon: any;
+  Logo: any;
 }
 
 export function getSocials(): Social[] {
@@ -14,22 +14,22 @@ export function getSocials(): Social[] {
     {
       href: "https://github.com/ausathdzil",
       label: "Link to ausath's GitHub profile",
-      Icon: GitHubIcon,
+      Logo: GitHubLogo,
     },
     {
       href: "https://instagram.com/ausathdzil",
       label: "Link to ausath's Instagram profile",
-      Icon: InstagramIcon,
+      Logo: InstagramLogo,
     },
     {
       href: "https://open.spotify.com/user/ausaaath?si=v8FEhD6HSCm0wVZxkAWdew",
       label: "Link to ausath's Spotify profile",
-      Icon: SpotifyIcon,
+      Logo: SpotifyLogo,
     },
     {
       href: "https://discord.com/users/ausathdzil",
       label: "Link to ausath's Discord profile",
-      Icon: DiscordIcon,
+      Logo: DiscordLogo,
     },
   ];
 }

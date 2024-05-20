@@ -6,11 +6,11 @@ export interface Language {
 export function getLanguages(): Language[] {
   return [
     {
-      name: "JavaScript",
+      name: "TypeScript",
       progress: 60,
     },
     {
-      name: "TypeScript",
+      name: "JavaScript",
       progress: 30,
     },
     {

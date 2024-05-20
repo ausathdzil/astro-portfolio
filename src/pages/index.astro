@@ -2,11 +2,11 @@
 import ProjectsAccordion from "@/components/ProjectsAccordion";
 import LanguageProgress from "@/components/LanguageProgress";
 import Layout from "@/layouts/Layout.astro";
-import TechStackCards from "@/components/TechStackCards.astro";
+import TechStackCards from "@/components/ToolsCard.astro";
 ---
 
 <Layout title="wrath • home">
-  <article class="mb-10">
+  <article>
     <small class="text-sm text-zinc-500">
       IPA&nbsp; /raTH/ — extreme anger 😼
     </small>
@@ -15,19 +15,19 @@ import TechStackCards from "@/components/TechStackCards.astro";
       Hello 🙋‍♂️ my name is <strong>Ausath</strong>, or <strike>wrath</strike> <i>(ign)</i>. 
       I'm an undergraduate student currently majoring in Information Systems. I'm interested 
       in <strong>front-end web development</strong> and are currently learning to build 
-      websites with <strong>Astro</strong> 🤓 I used it to build this website 
+      websites with <strong>Astro</strong>. I used it to build this website 
       (still in progress) as part of my learning process. As of doing things on my free time, 
-      I enjoy listening to music and playing games so feel free to add me on Spotify and Discord 🎮.
+      I enjoy listening to music and playing games, so feel free to add me on Spotify and Discord 🎮.
     </p>
   </article>
 
-  <article class="mb-10 w-full">
+  <article class="w-full">
     <h1 class="font-bold mb-4">Projects</h1>
 
     <ProjectsAccordion client:load />
   </article>
 
-  <article class="mb-10">
+  <article>
     <h1 class="font-bold mb-4">Works</h1>
 
     <p class="text-base">
@@ -38,13 +38,13 @@ import TechStackCards from "@/components/TechStackCards.astro";
   </article>
 
   <article>
-    <h1 class="font-bold mb-4">Language Used</h1>
+    <h1 class="font-bold mb-4">Languages</h1>
 
     <LanguageProgress client:visible />
   </article>
 
   <article>
-    <h1 class="font-bold mb-4">Tech Stack</h1>
+    <h1 class="font-bold mb-4">Tools</h1>
 
     <TechStackCards />
   </article>

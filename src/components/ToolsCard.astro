@@ -1,7 +1,7 @@
 ---
-import { type TechStack, getTechStack } from "@/lib/tech-stack";
+import { type Tools, getTools } from "@/lib/tools";
 
-const techStack: TechStack[] = getTechStack();
+const techStack: Tools[] = getTools();
 ---
 
 <div class="flex flex-wrap justify-center sm:justify-start items-center gap-16 mb-8 sm:mb-8">
@@ -11,7 +11,7 @@ const techStack: TechStack[] = getTechStack();
       target="_blank"
       aria-label={`link to ${tech.name} page`}
     >
-      <tech.Icon />
+      <tech.Logo />
     </a>
   ))}
 </div>
