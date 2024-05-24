@@ -1,6 +1,6 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import { type Album, getAlbums } from "@/lib/albums";
 import { Separator } from "@/components/ui/separator";
 
@@ -26,7 +26,6 @@ const currentAlbum = albums.find((album) => album.id === albumId);
       width="300"
       height="300"
       transition:name={`image-${currentAlbum?.id}`}
-      loading="lazy"
     />
     <h1 class="font-bold">{currentAlbum?.title}</h1>
     <p class="text-sm">{currentAlbum?.artist}</p>
