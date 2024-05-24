@@ -1,11 +1,11 @@
 ---
-import Image from "astro/components/Image.astro";
+import { Image } from "astro:assets";
 import { type Album, getAlbums } from "@/lib/albums";
 
 const albums: Album[] = getAlbums();
 ---
 
-<div class="mt-4 mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
+<div class="mb-8 grid grid-cols-2 sm:grid-cols-3 gap-8">
   {albums.map((album) => (
     <a 
       href={`/album/${album.id}`}
@@ -18,7 +18,6 @@ const albums: Album[] = getAlbums();
           class="rounded-lg mb-4"
           width="220"
           height="220"
-          loading="lazy"
         />
         <h1 class="hidden lg:inline font-semibold text-lg">{album.title}</h1>
       </div>
