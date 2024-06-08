@@ -24,7 +24,7 @@ export default function ProjectsAccordion() {
   return (
     <>
       {projectChunks.map((chunk, chunkIndex) => (
-        <div key={chunkIndex} className="flex flex-col lg:flex-row gap-8">
+        <div key={chunkIndex} className="flex flex-col lg:flex-row gap-8 my-8 lg:my-0">
           {chunk.map((project, index) => (
             <Accordion key={index} type="single" collapsible className="w-full">
               <AccordionItem value={`item-${index + 1}`} className="md:mb-8">
@@ -36,7 +36,7 @@ export default function ProjectsAccordion() {
                   <a 
                     href={project.link} 
                     target="_blank"
-                    className="underline underline-offset-8 hover:decoration-zinc-500"
+                    className="underline underline-offset-8 transition ease-in-out hover:decoration-zinc-500"
                     aria-label={`link to ${project.title} github repo`}
                   >
                     <p className="mt-4">github repo 📂</p>

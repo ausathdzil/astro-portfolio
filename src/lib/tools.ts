@@ -13,7 +13,7 @@ export interface Tools {
 export function getTools(): Tools[] {
   return [
     {
-      name: 'Nextjs',
+      name: 'Next.js',
       link: 'https://github.com/vercel/next.js',
       Logo: NextjsLogo,
     },
