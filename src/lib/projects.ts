@@ -14,9 +14,9 @@ export function getProjects(): Project[] {
       description: 'My attempt at cloning NASA APOD.',
     },
     {
-      title: 'Bookshelf',
-      link: 'https://github.com/ausathdzil/nextjs-bookshelf',
-      description: 'A catalogue for managing books.',
+      title: 'Hotel Express',
+      link: 'https://github.com/ausathdzil/hotel-express',
+      description: 'Full-stack web app for hotel managemenet system simulation.',
     },
     {
       title: 'Portfolio',
