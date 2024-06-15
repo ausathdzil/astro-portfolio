@@ -16,7 +16,7 @@ export function getProjects(): Project[] {
     {
       title: 'Hotel Express',
       link: 'https://github.com/ausathdzil/hotel-express',
-      description: 'Full-stack web app for hotel managemenet system simulation.',
+      description: 'Full-stack web app for hotel management system simulation.',
     },
     {
       title: 'Portfolio',
