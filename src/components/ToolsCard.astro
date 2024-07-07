@@ -1,17 +1,19 @@
 ---
-import { type Tools, getTools } from "@/lib/tools";
-
-const techStack: Tools[] = getTools();
+import { tools } from '@/lib/tools';
 ---
 
-<div class="flex flex-wrap justify-center sm:justify-start items-center gap-16 mb-8 sm:mb-8">
-  {techStack.map((tech) => (
-    <a
-      href={tech.link}
-      target="_blank"
-      aria-label={`link to ${tech.name} page`}
-    >
-      <tech.Logo />
-    </a>
-  ))}
+<div
+  class="flex flex-wrap justify-center sm:justify-start items-center gap-16 mb-8 sm:mb-8"
+>
+  {
+    tools.map((tool) => (
+      <a
+        href={tool.link}
+        target="_blank"
+        aria-label={`link to ${tool.name} page`}
+      >
+        <tool.Logo />
+      </a>
+    ))
+  }
 </div>

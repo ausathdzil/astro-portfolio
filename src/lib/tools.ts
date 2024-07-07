@@ -4,38 +4,30 @@ import ReactLogo from '@/components/icons/ReactLogo.astro';
 import TailwindLogo from '@/components/icons/TailwindLogo.astro';
 import ViteLogo from '@/components/icons/ViteLogo.astro';
 
-export interface Tools {
-  name: string;
-  link: string;
-  Logo: any;
-}
-
-export function getTools(): Tools[] {
-  return [
-    {
-      name: 'Next.js',
-      link: 'https://github.com/vercel/next.js',
-      Logo: NextjsLogo,
-    },
-    {
-      name: 'Astro',
-      link: 'https://github.com/withastro/astro',
-      Logo: AstroLogo,
-    },
-    {
-      name: 'React',
-      link: 'https://github.com/facebook/react',
-      Logo: ReactLogo,
-    },
-    {
-      name: 'Tailwind CSS',
-      link: 'https://github.com/tailwindlabs/tailwindcss',
-      Logo: TailwindLogo,
-    },
-    {
-      name: 'Vite',
-      link: 'https://github.com/vitejs/vite',
-      Logo: ViteLogo,
-    },
-  ];
-}
+export const tools = [
+  {
+    name: 'Next.js',
+    link: 'https://github.com/vercel/next.js',
+    Logo: NextjsLogo,
+  },
+  {
+    name: 'Astro',
+    link: 'https://github.com/withastro/astro',
+    Logo: AstroLogo,
+  },
+  {
+    name: 'React',
+    link: 'https://github.com/facebook/react',
+    Logo: ReactLogo,
+  },
+  {
+    name: 'Tailwind CSS',
+    link: 'https://github.com/tailwindlabs/tailwindcss',
+    Logo: TailwindLogo,
+  },
+  {
+    name: 'Vite',
+    link: 'https://github.com/vitejs/vite',
+    Logo: ViteLogo,
+  },
+];

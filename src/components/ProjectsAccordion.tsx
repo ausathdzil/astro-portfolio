@@ -4,9 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '@/components/ui/accordion';
-import { type Project, getProjects } from '@/lib/projects';
-
-const projects: Project[] = getProjects();
+import { projects } from '@/lib/projects';
+import { type Project } from '@/lib/definitions';
 
 function chunkArray(array: Project[], chunkSize: number) {
   const chunks = [];
@@ -20,6 +19,7 @@ function chunkArray(array: Project[], chunkSize: number) {
 const projectChunks = chunkArray(projects, 3);
 
 export default function ProjectsAccordion() {
+  const projectChunks = chunkArray(projects, 3);
   return (
     <>
       {projectChunks.map((chunk, chunkIndex) => (

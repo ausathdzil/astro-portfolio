@@ -1,7 +1,5 @@
-import { ProgressBar } from "./ProgressBar";
-import { type Language, getLanguages } from "@/lib/languages";
-
-const languages: Language[] = getLanguages();
+import { ProgressBar } from './ProgressBar';
+import { languages } from '@/lib/languages';
 
 export default function LanguageProgress() {
   return (

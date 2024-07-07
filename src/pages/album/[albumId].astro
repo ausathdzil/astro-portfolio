@@ -1,18 +1,14 @@
 ---
+import { albums } from "@/lib/albums";
 import Layout from "@/layouts/Layout.astro";
 import { Image } from "astro:assets";
-import { type Album, getAlbums } from "@/lib/albums";
 import { Separator } from "@/components/ui/separator";
 
 export function getStaticPaths() {
-  const albums: Album[] = getAlbums();
-
   return albums.map((album) => ({
     params: { albumId: album.id },
   }));
 }
-
-const albums: Album[] = getAlbums();
 const { albumId } = Astro.params;
 const currentAlbum = albums.find((album) => album.id === albumId);
 ---
