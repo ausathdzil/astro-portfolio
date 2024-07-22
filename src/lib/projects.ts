@@ -7,7 +7,8 @@ export const projects = [
   },
   {
     title: 'SEA Salon',
-    link: 'https://github.com/ausathdzil/discord-blast-bot',
+    link: 'https://github.com/ausathdzil/sea-salon',
+    webLink: 'https://sea-salon-ausath.vercel.app/',
     description:
       'Salon web app for booking and managing salon services. COMPFEST 16 Software Engineering Academy technical challenge.',
   },
