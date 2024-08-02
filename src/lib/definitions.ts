@@ -19,8 +19,8 @@ export type Language = {
 
 export type Project = {
   title: string;
-  link: string;
-  webLink?: string;
+  github?: string;
+  demo?: string;
   description: string;
 };
 

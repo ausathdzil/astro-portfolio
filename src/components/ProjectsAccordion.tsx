@@ -19,7 +19,6 @@ function chunkArray(array: Project[], chunkSize: number) {
 const projectChunks = chunkArray(projects, 3);
 
 export default function ProjectsAccordion() {
-  const projectChunks = chunkArray(projects, 3);
   return (
     <>
       {projectChunks.map((chunk, chunkIndex) => (
@@ -44,18 +43,20 @@ export default function ProjectsAccordion() {
                   {project.description}
 
                   <div className="flex gap-4 justify-start items-start">
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      className="underline underline-offset-8 transition ease-in-out hover:decoration-zinc-500"
-                      aria-label={`link to ${project.title} github repo`}
-                    >
-                      <p className="mt-4">github repo 📂</p>
-                    </a>
-
-                    {project.webLink && (
+                    {project.github && (
                       <a
-                        href={project.webLink}
+                        href={project.github}
+                        target="_blank"
+                        className="underline underline-offset-8 transition ease-in-out hover:decoration-zinc-500"
+                        aria-label={`link to ${project.title} github repo`}
+                      >
+                        <p className="mt-4">github repo 📂</p>
+                      </a>
+                    )}
+
+                    {project.demo && (
+                      <a
+                        href={project.demo}
                         target="_blank"
                         className="underline underline-offset-8 transition ease-in-out hover:decoration-zinc-500"
                         aria-label={`link to ${project.title}`}
