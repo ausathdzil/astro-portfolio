@@ -8,7 +8,7 @@ export const projects = [
   {
     title: 'NASA APODs Gallery',
     github: 'https://github.com/ausathdzil/nasa-apods-gallery',
-    demo: 'https://apod-galler-nasa.vercel.app/',
+    demo: 'https://apod-gallery-nasa.vercel.app/',
     description: 'My attempt at cloning NASA APOD.',
   },
   {
